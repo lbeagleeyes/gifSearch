@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meme search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Find your meme!</h1>
+            <p class="lead" id="buttons-view"></p>
+            <form class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputWord" class="sr-only">Enter your emotion:</label>
+                    <input type="text" class="form-control" id="wordSearchInput">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2" onclick="addButton()">Add Emotion</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="card-columns" id="gif-container">
+                    <!-- add search results cards here -->
+                </div>
+            </div>
+            <div class="col-sm-3" id="favorites-container">
+                <!-- Add favorite divs here -->
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
