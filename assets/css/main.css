@@ -1,4 +1,32 @@
 .emotionBtn {
     margin-right: 2%;
     margin-bottom: 2%;
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 65%;
+    display: none;
+    z-index: 1000;
+    color: gray;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.gif {
+    position: relative;
+}
+
+.favIcon {
+    position: absolute;
+    top: 5;
+    left: 5;
+    z-index: 1;
+    color:white;
+    background-image: radial-gradient(circle, rgba(114, 114, 119, 25%), rgba(114, 114, 119, 0%) );
+    padding:1%;
+
 }
