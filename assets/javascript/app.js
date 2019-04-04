@@ -93,7 +93,7 @@ function getGifs(emotion) {
     });
 }
 
-function getFavGifs( imgId, isFirst = false) {
+function getFavGifs( imgId) {
 
     let queryURL = "";
     if (imgId) {
@@ -117,25 +117,18 @@ function getFavGifs( imgId, isFirst = false) {
     }).then(function (response) {
         console.log(response);
         if (imgId) {
-            createFavGifs(response.data, isFirst);
+            createFavGifs(response.data);
         } else {
             for (var i = 0; i < response.data.length; i++) {
-                createFavGifs(response.data[i], isFirst);
+                createFavGifs(response.data[i]);
             }
         }
 
     });
 }
 
-function createFavGifs(data, isFirst) {
+function createFavGifs(data) {
 
-    //if this is the first item
-    if (isFirst) {
-        var title = new $('<h3>', {
-            text: "Favorites"
-        })
-        $('#favorites').prepend(title);
-    }
     var imgSrc = data.images.preview_gif.url;
 
     var gifCard = new $('<div>', {
@@ -197,10 +190,9 @@ function showGifs(emotion, response) {
                 } else {
                     $(this).attr("class", "fas fa-heart favIcon");
                     isfavorite = true;
-                    var isFirst = (favorites.length > 0)?false: true;
                     if (favorites.indexOf(imgId) == -1) {
                         favorites.push(imgId);
-                        getFavGifs(imgId, isFirst);
+                        getFavGifs(imgId);
                     }
                 }
                 $(this).data('favorite', isfavorite)
