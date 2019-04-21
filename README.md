@@ -4,8 +4,11 @@ Search for gifs on your emotions by clicking on the predefined buttons or adding
 
 Safe your favorite gifs!
 
+Click on the picture to see the animated gif. Click again to make make it still. 
+
 Use https://lbeagleeyes.github.io/gifSearch/ to access the webpage and start searching. 
 
 *This app uses giphy api.*
 
 
+*To do: make favorites images still by default*
