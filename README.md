@@ -6,6 +6,6 @@ Safe your favorite gifs!
 
 Use https://lbeagleeyes.github.io/gifSearch/ to access the webpage and start searching. 
 
-*This app usees giphy api.*
+*This app uses giphy api.*
 
 
